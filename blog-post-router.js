@@ -63,6 +63,7 @@ router.post('/blog-posts', (req,res,next) => {
 		}
 	}
 
+	console.log(req.body);
 	let objectToAdd = {
 		id: uuidv4(),
 		title: req.body.title,

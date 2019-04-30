@@ -70,6 +70,7 @@ function getAutor(autor){
 			throw new Error(response.statusText);
 		})
 		.then(responseJSON => {
+			console.log(responseJSON);
 			displayAuthor(responseJSON);
 		})
 		.catch(err => {
