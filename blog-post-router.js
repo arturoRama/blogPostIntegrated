@@ -50,7 +50,7 @@ router.get('/blog-posts/:author', (req,res,next) => {
 });
 
 router.post('/blog-posts', (req,res,next) => {
-	let requiredFields = ['title','content','author','publishDate'];
+	let requiredFields = ['title','content','publishDate'];
 
 	for(let i = 0; i < requiredFields.length; i++){
 		let currentField = requiredFields[i];

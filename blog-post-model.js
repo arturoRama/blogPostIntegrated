@@ -6,7 +6,7 @@ let blogSchema = mongoose.Schema({
 	id : {type : String, required : true, unique : true},
 	title: {type : String, required : true, unique : false},
 	content: {type : String, required : true, unique : false},
-	author: {type : String, required : true, unique : false},
+	author: {type : String, unique : false},
 	publishDate: {type : String, required : true, unique : false}
 });
 
